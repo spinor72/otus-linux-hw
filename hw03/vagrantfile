@@ -55,7 +55,7 @@ Vagrant.configure("2") do |config|
               mkdir -p ~root/.ssh
               cp ~vagrant/.ssh/auth* ~root/.ssh
               yum install -y vim psmisc https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-              yum install -y ncdu xfsdump 
+              yum install -y xfsdump 
             SHELL
         end
     end

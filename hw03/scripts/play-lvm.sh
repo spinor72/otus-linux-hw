@@ -48,15 +48,15 @@ vgs -o +lv_size,lv_name
 lsblk
 mkdir /data-snap
 mount /dev/otus/test-snap /data-snap/
-ll /data-snap/
+ls /data-snap/
 umount /dev/otus/test-snap
-ll /data
+ls /data
 rm  /data/test.log
-ll /data
+ls /data
 umount /data
 lvconvert --merge /dev/otus/test-snap
 mount /dev/otus/test /data
-ll /data
+ls /data
 # LVM Mirroring
 pvcreate /dev/sd{d,e}
 vgcreate vg0 /dev/sd{d,e}
